@@ -1,0 +1,210 @@
+body {
+  background-image: url('../images/FundoSite2.png');
+  background-size: cover;       /* cobre toda a tela */
+  background-repeat: no-repeat; /* não repete a imagem */
+  background-position: center;  /* centraliza a imagem */
+}
+
+.borda-inferior {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.btn-cadastro {
+  margin-top: 20px;
+  background-color: white;
+  color: #2e7d32;
+  border: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-cadastro:hover {
+  background-color: #f1f1f1;
+  color: #25692c;
+}
+
+.section {
+  padding: 20px 20px 60px 20px; /* cima, direita, baixo, esquerda */
+}
+
+.card-explicativa {
+  background-color: white;
+  color: #33cb98;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card-explicativa img {
+ width: 150px;        /* aumenta a largura */
+  height: auto;       /* mantém proporção */
+  margin-bottom: 1rem;
+}
+
+.bloco-verde-claro {
+  background-color: #4caf50;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.bloco-verde-claro h2 {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+
+.quem-somos {
+  text-align: center;
+  padding: 60px 30px;
+  line-height: 1.8;
+  color: white;
+}
+
+.imagem-extrato {
+  max-width: 90%;        /* reduz um pouco o tamanho geral */
+  border-radius: 16px;   /* arredonda as bordas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* opcional: sombra leve para destacar */
+  margin: 0 auto;
+}
+
+.divisor-seta {
+  border-top: 2px dashed #4caf50;
+  position: relative;
+  height: 30px;
+}
+
+.seta {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e7d32;
+  padding: 0 10px;
+  font-size: 2rem;
+  color: #4caf50;
+}
+
+.img-menor {
+  max-width: 90%;     /* controla a largura */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.bloco-alerta {
+    background-color: #fef9f3;
+    border-top: 4px solid #ffc107;
+    border-bottom: 4px solid #ffc107;
+}
+
+
+
+
+
+
+
+
+.mascote-animacao {
+  background-color: #d6f5d6;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mascote-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+/* Imagem de fundo (o anel verde) */
+.circulo-fundo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  z-index: 0;
+}
+
+/* Mascote fixo no centro */
+.mascote-centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Orbita girando */
+.orbita {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  animation: girar 10s linear infinite;
+  z-index: 1;
+}
+
+/* Itens da órbita */
+.orbita-item {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px; /* para centralizar o ícone */
+}
+
+/* Orbita em 4 posições */
+.orbita-item:nth-child(1) {
+  transform: rotate(0deg) translateX(160px) rotate(0deg);
+}
+.orbita-item:nth-child(2) {
+  transform: rotate(90deg) translateX(160px) rotate(-90deg);
+}
+.orbita-item:nth-child(3) {
+  transform: rotate(180deg) translateX(180px) rotate(-180deg);
+}
+.orbita-item:nth-child(4) {
+  transform: rotate(270deg) translateX(180px) rotate(-270deg);
+}
+
+.orbita-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes girar {
+  0%   { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}

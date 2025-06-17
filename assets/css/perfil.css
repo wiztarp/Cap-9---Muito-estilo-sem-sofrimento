@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("../images/Fundo\ do\ site.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.perfil-container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.voltar-link {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #007f2d;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.voltar-link:hover {
+  color: #004d1a;
+}
+
+.titulo-app {
+  color: #007f2d;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.titulo-pagina {
+  font-size: 24px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.campo-input {
+  display: flex;
+  align-items: center;
+  background-color: #e3f3e3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.icone-input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.campo-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao-verde {
+  background-color: #007f2d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-verde:hover {
+  background-color: #34a853; /* Verde mais claro no hover */
+  cursor: pointer;
+}
+
+.botoes-acoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botoes-acoes .botao-verde {
+  width: auto;
+  flex: 1;
+}
